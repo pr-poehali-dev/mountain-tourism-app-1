@@ -15,8 +15,14 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="min-h-screen p-4 pt-6">
-      <div className="max-w-screen-xl mx-auto">
+    <div 
+      className="min-h-screen p-4 pt-6 bg-cover bg-center bg-fixed relative"
+      style={{ 
+        backgroundImage: `url(https://cdn.poehali.dev/projects/789cfedd-2e12-4572-a1ee-a892e56fc4a5/files/043f43dc-07cc-4ef3-9242-ee1867fb2226.jpg)` 
+      }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/90" />
+      <div className="max-w-screen-xl mx-auto relative z-10">
         <h1 className="text-4xl font-bold text-mountain-green mb-2">Горный туризм</h1>
         <p className="text-muted-foreground mb-8">Краснодарский край</p>
 
